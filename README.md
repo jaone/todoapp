@@ -27,3 +27,6 @@ or
 ```bash
 react-app-rewired build
 ```
+## Deploy URL
+
+[todoapp-jaone.vercel.app](https://todoapp-jaone.vercel.app/)
