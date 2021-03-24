@@ -20,6 +20,7 @@ function EditInput(props) {
   const saveAction = () => {
     triggerAction(id, localState)
     setTodo(localState)
+    setLocalState("")
   }
 
   return (

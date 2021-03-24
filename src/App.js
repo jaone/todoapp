@@ -29,8 +29,8 @@ export default function App() {
       <div className={classes.root}>
         <TodoContextProvider>
           <Grid container direction="row" justify="center" alignItems="center">
-            <Grid item xs={4} />
-            <Grid item xs={4}>
+            <Grid item xs={10} md={4}/>
+            <Grid item xs={10} md={4}>
               <Typography variant="h4" gutterBottom>
                 Todo App <br/>
                 with <br/>
@@ -39,7 +39,7 @@ export default function App() {
               <AddUpdateTodo type="add" id={null} />
               <TodoList />
             </Grid>
-            <Grid item xs={4} />
+            <Grid item xs={10} md={4} />
           </Grid>
         </TodoContextProvider>
       </div>

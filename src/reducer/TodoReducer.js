@@ -28,7 +28,7 @@ export const todoReducer = (state, action) => {
       break;
     }
     case Action.UPDATE: {
-      _state.todoList = _state.todoList.map(t => t.id === action.todo?.id ? action.todo : t)
+      _state.todoList = _state.todoList.map(t => t.id === action.todo?.id ? { ...t, ...action.todo } : t)
       break;
     }
     case Action.CHECK: {

@@ -59,7 +59,6 @@ const AddUpdateTodo = (props) => {
         text: tValue,
         id: !tId ? uuidv4() : tId,
         isEdited: false,
-        isCheck: false,
       },
     });
     type === "add" && setTodo(""); 
