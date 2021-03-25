@@ -2,17 +2,15 @@ import React from "react";
 import AddUpdateTodo from "@/components/AddUpdateTodo";
 import TodoContextProvider from "@/context/TodoContext";
 import TodoList from "@/components/TodoList";
+import { palette } from "@/util/palette.json";
+
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme, CssBaseline } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const theme = createMuiTheme({
-  palette: {
-    type: "dark",
-  },
-});
+const theme = createMuiTheme({ palette });
 
 const useStyles = makeStyles(() => ({
   root: {
